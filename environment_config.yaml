@@ -2,7 +2,7 @@ attributes:
   nfs_volume_for_nova:
     value: ""
     label: "NFS Volume"
-    description: "NFS volume to store instances (e.g. 192.168.0.2/vol2)"
+    description: "NFS volume to store instances (e.g. 192.168.0.2:/vol2)"
     weight: 10
     type: "text"
   nfs_mount_point_nova:
