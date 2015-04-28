@@ -1,0 +1,8 @@
+Verified+2: Jenkins
+Code-Review+2: LoicNicolle <loic.nicolle@orange.com>
+Workflow+1: LoicNicolle <loic.nicolle@orange.com>
+Submitted-by: Jenkins
+Submitted-at: Tue, 28 Apr 2015 08:19:12 +0000
+Reviewed-on: https://review.openstack.org/178071
+Project: stackforge/fuel-plugin-nova-nfs
+Branch: refs/heads/master
