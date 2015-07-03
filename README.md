@@ -16,7 +16,7 @@ Requirements
 
 | Requirement                      | Version/Comment                                         |
 |----------------------------------|---------------------------------------------------------|
-| Mirantis Openstack compatibility | 6.0                                                     |
+| Mirantis Openstack compatibility | 6.1                                                     |
 |----------------------------------|---------------------------------------------------------|
 | NFS Server                       | an NFS server with volume accessible from compute nodes |
 
@@ -49,18 +49,21 @@ Nova-nfs plugin installation
 
    ``fpb --build fuel-plugin-nova-nfs/``
 
-4. The nova_nfs-<x.x.x>.fp file will be created in the plugin folder (fuel-plugin-nova-nfs)
+4. The nova_nfs-<x.x.x>.rpm file will be created in the plugin folder (fuel-plugin-nova-nfs)
 
 5. Move this file to the Fuel Master node with secure copy (scp):
 
-   ``scp nova_nfs-<x.x.x>.fp root@:<the_Fuel_Master_node_IP address>:/tmp``
+   ``scp nova_nfs-<x.x.x>.rpm root@:<the_Fuel_Master_node_IP address>:/tmp``
    ``cd /tmp``
 
 6. Install the nova-nfs plugin:
 
-   ``fuel plugins --install nova_nfs-<x.x.x>.fp``
-
-6. Plugin is ready to use and can be enabled on the Settings tab of the Fuel web UI.
+   ``fuel plugins --install nova_nfs-<x.x.x>.rpm``
+   
+7.  Verify that the plugin is installed correctly:
+   ``fuel plugins --list``
+   
+8. Plugin is ready to use and can be enabled on the Settings tab of the Fuel web UI.
 
 User Guide
 ==========
@@ -103,5 +106,8 @@ Release Notes
 
 * Initial release of the plugin
 
+**2.0.0**
+
+* Update plugin to Fuel 6.1 release
 
 

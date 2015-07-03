@@ -1,6 +1,6 @@
 # This task is required for compute nodes
 - role: ['compute']
-  stage: post_deployment
+  stage: post_deployment/2000
   type: puppet
   parameters:
     puppet_manifest: puppet/site.pp
