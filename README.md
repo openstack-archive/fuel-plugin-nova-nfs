@@ -16,7 +16,7 @@ Requirements
 
 | Requirement                      | Version/Comment                                         |
 |----------------------------------|---------------------------------------------------------|
-| Mirantis Openstack compatibility | 6.1                                                     |
+| Mirantis Openstack compatibility | 7.0                                                     |
 |----------------------------------|---------------------------------------------------------|
 | NFS Server                       | an NFS server with volume accessible from compute nodes |
 
@@ -110,4 +110,6 @@ Release Notes
 
 * Update plugin to Fuel 6.1 release
 
+**3.0.0**
 
+* Update plugin to Fuel 7.0 release
