@@ -1,0 +1,8 @@
+Verified+2: Jenkins
+Code-Review+2: Samuel BARTEL <samuel.bartel@orange.com>
+Workflow+1: Samuel BARTEL <samuel.bartel@orange.com>
+Submitted-by: Jenkins
+Submitted-at: Thu, 24 Sep 2015 14:26:17 +0000
+Reviewed-on: https://review.openstack.org/227332
+Project: stackforge/fuel-plugin-nova-nfs
+Branch: refs/heads/master
