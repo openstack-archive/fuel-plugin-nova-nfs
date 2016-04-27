@@ -7,7 +7,8 @@ Nova-nfs plugin
 Overview
 --------
 nova-nfs uses nfs backend to store ephemeral volumes (intances.) This plugin allow to mount a nfs volume
-annd use it as storage backend for Nova.
+and use it as storage backend for Nova. It introduce deployment task which will be rinning on ``compute``
+role
 
 This repo contains all necessary files to build nova-nfs Fuel plugin.
 
@@ -16,7 +17,7 @@ Requirements
 
 | Requirement                      | Version/Comment                                         |
 |----------------------------------|---------------------------------------------------------|
-| Mirantis Openstack compatibility | 7.0                                                     |
+| Mirantis Openstack compatibility | 7.0, 8.0                                                |
 |----------------------------------|---------------------------------------------------------|
 | NFS Server                       | an NFS server with volume accessible from compute nodes |
 
@@ -28,7 +29,7 @@ None.
 Limitations
 -----------
 
-Only on nfs volume can be defined. So in HA deployment compute node will share the same
+Only one nfs volume can be defined. So in HA deployment compute node will share the same
 storage backend for instances.
 
 Installation Guide
@@ -90,7 +91,7 @@ Deployment details
 ------------------
 
 Create mountpoint directory
-Edit Fstab to add auto mount of NFS volume on the mountpoint
+Edit ``/etc/fstab`` to add auto mount of NFS volume on the mountpoint
 Configure Nova to use it as backend for instances
 Restart nova services
 
@@ -113,3 +114,7 @@ Release Notes
 **3.0.0**
 
 * Update plugin to Fuel 7.0 release
+
+**3.2.0**
+
+* Update plugin to inject task into deployment graph instead of being run as post-deployment task

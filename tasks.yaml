@@ -1,8 +1,0 @@
-# This task is required for compute nodes
-- role: ['compute']
-  stage: post_deployment/2000
-  type: puppet
-  parameters:
-    puppet_manifest: puppet/site.pp
-    puppet_modules:  "puppet/modules/:/etc/puppet/modules/"
-    timeout: 360

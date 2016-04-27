@@ -1,0 +1,9 @@
+- id: nova-nfs-deployment-puppet
+  type: puppet
+  groups: [compute]
+  required_for: [deploy_end]
+  requires: [deploy_start, top-role-compute, openstack-network-end]
+  parameters:
+    puppet_manifest: puppet/site.pp
+    puppet_modules:  "puppet/modules/:/etc/puppet/modules/"
+    timeout: 360
