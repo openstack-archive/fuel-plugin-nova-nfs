@@ -16,7 +16,7 @@ Requirements
 
 | Requirement                      | Version/Comment                                         |
 |----------------------------------|---------------------------------------------------------|
-| Mirantis Openstack compatibility | 7.0                                                     |
+| Mirantis Openstack compatibility | 7.0, 8.0                                                |
 |----------------------------------|---------------------------------------------------------|
 | NFS Server                       | an NFS server with volume accessible from compute nodes |
 
