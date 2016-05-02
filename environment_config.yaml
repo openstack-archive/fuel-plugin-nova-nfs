@@ -5,9 +5,15 @@ attributes:
     description: "NFS volume to store instances (e.g. 192.168.0.2:/vol2)"
     weight: 10
     type: "text"
+    regex:
+      source: '^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?):/(?:[\w-]+\/?)+$'
+      error: "NFS volume path must be in form IP.ADD.RE.SS:/unix/path/to/volume e.g. 192.168.0.2:/vol2"
   nfs_mount_point_nova:
     value: "/mnt/nova"
     label: "NFS mount point"
     description: "Mount point to store instances (Nova)"
     weight: 20
     type: "text"
+    regex:
+      source: '^/(?:[\w-]+\/?)+$'
+      error: "Valid characters are: '/', '0-9', 'a-z', 'A-Z', '_', '-'"
