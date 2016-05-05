@@ -7,3 +7,13 @@
     puppet_manifest: puppet/site.pp
     puppet_modules:  "puppet/modules/:/etc/puppet/modules/"
     timeout: 360
+
+- id: nova-nfs-create-nova-user
+  type: puppet
+  groups: [compute]
+  required_for: [top-role-compute]
+  requires: [deploy_start]
+  parameters:
+    puppet_manifest: puppet/create_user.pp
+    puppet_modules:  "puppet/modules/:/etc/puppet/modules/"
+    timeout: 360
