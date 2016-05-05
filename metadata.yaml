@@ -2,7 +2,7 @@
 name: nova_nfs
 title: Nova NFS plugin
 # Plugin version
-version: 3.2.0
+version: 3.2.1
 # Description
 description: Enables Nova to use NFS volume as storage backend for ephemeral volumes
 # Required fuel version

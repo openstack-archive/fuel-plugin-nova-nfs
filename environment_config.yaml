@@ -17,3 +17,9 @@ attributes:
     regex:
       source: '^/(?:[\w-]+\/?)+$'
       error: "Valid characters are: '/', '0-9', 'a-z', 'A-Z', '_', '-'"
+  create_nova_user:
+    value: true
+    label: 'Create system user `nova`'
+    description: 'Create system user `nova` to ensure same uid/git for it on all compute nodes'
+    weight: 30
+    type: "checkbox"

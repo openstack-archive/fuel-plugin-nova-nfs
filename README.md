@@ -118,3 +118,7 @@ Release Notes
 **3.2.0**
 
 * Update plugin to inject task into deployment graph instead of being run as post-deployment task
+
+**3.2.1**
+
+* Plugin is able to create system user `nova` on compute nodes with same uid/gid
